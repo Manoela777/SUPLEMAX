@@ -1,0 +1,256 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* header */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem 8%;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem 8%;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3452f5;
+}
+
+.nav-auth {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-auth i {
+    color: #3452f5;
+    font-size: 25px;
+}
+
+.btn-primary {
+    background: #3452f5;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+
+.logo img {
+    width: 50%;
+}
+
+/* body */
+.banner img {
+    max-width: 100%;
+    vertical-align: top;
+    height: auto;
+    /* display: block; */
+    margin: auto;
+}
+
+.img-banner {
+    background-image: url('../image/banner/Frete Grátis Banner.png');
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* .img-banner h2 {
+    font-size: 200px;
+    color: red;
+    padding-left: 300px;
+    padding-left: 191px;
+    padding-top: 162px;
+    line-height: 53px;
+    text-transform: uppercase;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: 40% 30%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.btn-primary-products {
+    background: #3452f5;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.preco {
+    font-weight: bold;
+}
+
+.container-btn-produtos {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container-btn-duvidas {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-VerMais {
+    background: #3452f5;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+}
+
+/*footer*/
+footer {
+    padding: 3rem 8%;
+    background: #3452f5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    padding: 15px 0px;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer i {
+    padding: 15px 0;
+    font-size: 28px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*página produtos*/
+.produtos {
+    padding: 200px 8% 4rem;
+    background: #f9f9f9;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #222;
+}
+
+/*página Perguntas*/
+.titulo-perguntas{
+    padding: 120px 8% 4rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #222;
+}
+ 
+.faq-section{
+    padding: 5rem 8%;
+    font-weight: bold;
+    font-size: 18px;
+}
+ 
+.item-pergunta{
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    padding: 15px;
+}
+ 
+.pergunta-header{
+    padding: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+ 
+.pergunta-content{
+    padding: 20px;
+    background: #fafafa;
+    color: #555;
+    line-height: 1.6;
+}
