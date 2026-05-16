@@ -9,3 +9,4 @@ Pendência:
 # A página de carrinho.
 # A página de Log-In e Cadastro.
 # Abaixo de Ver Oferta adicionar o botão Adicionar ao Carrinho. 
+# Adicionar cards dos produtos em Produtos.
