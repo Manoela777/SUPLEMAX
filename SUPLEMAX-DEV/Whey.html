@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whey Protein Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/image/imagem-removebg-preview.png" alt="">
+        </div>
+        <nav class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-regular fa-house"></i> Home</a></li>
+                <li><a href="Produtos.html"><i class="fa-solid fa-pills"></i> Produtos</a></li>
+                <li><a href="Perguntas.html"><i class="fa-regular fa-circle-question"></i> Perguntas Frequentes</a></li>
+            </ul>
+
+        </nav>
+        <div class="nav-auth">
+            <a href="" class="btn-primary">Entrar</a>
+            <a href="" class="btn-primary">Cadastre-se</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <i class="fa-solid fa-calculator" onclick="calculadora()"></i>
+        </div>
+        <div id="calculadora">
+            <form action="">
+                <label for="">Peso</label>
+                <input type="text" id="peso">
+                <label for="">Altura</label>
+                <input type="text" id="altura">
+                <br>
+                <button onclick="calcular()" type="">Calculadora</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="produto">
+        <div class="nome_produto">
+            <br>
+            <h1>Whey Protein Premium</h1>
+        </div>
+        <div style="display: flex;">
+            <div class="img_produto">
+                <img src="assets/image/produtos/Whey.png" alt="">
+            </div>
+
+            <div class="descricao_produto">
+                <p>O Whey Protein Premium é uma proteína extraída do soro do leite,
+                    conhecida por sua alta qualidade e valor biológico.
+                    Ele contém uma poderosa dose de 28 gramas de proteína por porção,
+                    além de ser enriquecido com BCAAs e Glutamina,
+                    que são essenciais para o crescimento e desenvolvimento muscular.
+                    Este produto é ideal para atender às necessidades proteicas dos praticantes de atividades físicas,
+                    garantindo um desempenho superior e evitando a fadiga muscular.</p>
+
+                <s>R$ 160,90</s>
+                <h3>R$ 128,72</h3>
+                    <div style="display: flex;">
+                        <button>-</button>
+                        <p>2</p>
+                        <button>+</button>
+                    </div>
+                    <button>Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <h3>SUPLEMAX</h3>
+        <P>CNPJ: 88.138.062/0001-05</P>
+        <br>
+        <p>O melhor suplemento está aqui</p>
+    </div>
+    <div class="footer-links">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </i>
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
