@@ -32,10 +32,26 @@
             <a href="" class="btn-primary">Entrar</a>
             <a href="" class="btn-primary">Cadastre-se</a>
             <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="https://abeso.org.br/calculadora-imc/" target="_blank" rel="noopener noreferrer"><i
-                    class="fa-solid fa-calculator"></i></a>
+            <i class="fa-solid fa-calculator" onclick="calculadora()"></i>
+
         </div>
+
+        <div id="calculadora" >
+            <form action="">
+                <label for="">Peso</label>
+                <input type="text" id="peso">
+                <label for="">Altura</label>
+                <input type="text" id="altura">
+                <br>
+                <button onclick="calcular()" type="">Calculadora</button>
+            </form>
+        </div>
+
     </header>
+
+
+
+
 
     <section>
         <div class="banner">
@@ -48,7 +64,6 @@
             <!-- <img src="assets/image/banner/Suplementação Inteligente.png"> -->
         </div>
     </section>
-
     <div class="grid-container">
         <div class="card">
             <img src="assets/image/produtos/Whey.png" alt="">
@@ -129,6 +144,12 @@
         <img src="assets/image/feedback/feedback1.png" alt="feedback do nosso cliente">
     </div>
 
+    <div class="botao_contato">
+        <a href="https://faq.whatsapp.com/" target="_blank" rel="stylesheet"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+
+
     <footer>
         <div class="footer-content">
             <h3>SUPLEMAX</h3>
@@ -143,6 +164,8 @@
             </i>
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 

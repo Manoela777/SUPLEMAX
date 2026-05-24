@@ -31,8 +31,19 @@
             <a href="" class="btn-primary">Entrar</a>
             <a href="" class="btn-primary">Cadastre-se</a>
             <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="https://abeso.org.br/calculadora-imc/" target="_blank" rel="noopener noreferrer"><i
-                    class="fa-solid fa-calculator"></i></a>
+            <i class="fa-solid fa-calculator" onclick="calculadora()"></i>
+
+        </div>
+
+        <div id="calculadora" >
+            <form action="">
+                <label for="">Peso</label>
+                <input type="text" id="peso">
+                <label for="">Altura</label>
+                <input type="text" id="altura">
+                <br>
+                <button onclick="calcular()" type="">Calculadora</button>
+            </form>
         </div>
     </header>
 
@@ -57,9 +68,6 @@
             <div class="etiqueta etiqueta-natural">
                 <p>100% natural</p>
             </div>
-            <div class="etiqueta etiqueta-importado">
-                <p>Importado</p>
-            </div>
             <div class="etiqueta etiqueta-off">
                 <p>20% off</p>
             </div>
@@ -77,9 +85,6 @@
 
                 <div class="etiqueta etiqueta-natural">
                     <p>100% natural</p>
-                </div>
-                <div class="etiqueta etiqueta-importado">
-                    <p>Importado</p>
                 </div>
                 <div class="etiqueta etiqueta-off">
                     <p>20% off</p>
@@ -124,9 +129,6 @@
                 <div class="etiqueta etiqueta-natural">
                     <p>100% natural</p>
                 </div>
-                <div class="etiqueta etiqueta-importado">
-                    <p>Importado</p>
-                </div>
                 <div class="etiqueta etiqueta-off">
                     <p>20% off</p>
                 </div>
@@ -138,7 +140,6 @@
             <div class="card-body">
                 <h3>Óleo de semente de abobora</h3>
                 <p class="descricao">Suplemento rico em ácidos graxos, antioxidantes e zinco</p>
-                <s>R$ 48,63/unidade</s>
                 <p class="preco">R$ 38,90/unidade</p>
                 <a class="btn-primary-products">Ver oferta</a>
                 <a class="btn-primary-products">Adicionar ao carrinho</a>
@@ -147,20 +148,13 @@
             <div class="etiqueta etiqueta-natural">
                 <p>100% natural</p>
             </div>
-            <div class="etiqueta etiqueta-importado">
-                <p>Importado</p>
-            </div>
-            <div class="etiqueta etiqueta-off">
-                <p>20% off</p>
-            </div>
         </div>
 
         <div class="card">
             <img src="assets/image/produtos/oleo_chia.png" alt="">
             <div class="card-body">
                 <h3>Óleo de Chia Cápsula</h3>
-                <p class="descricao">Suplemento rico em Ômegas e antioxidantes</p>
-                <s>R$ 37,37/unidade</s>
+                <p class="descricao">Suplemento rico em Ômegas e antioxidantes oferecendo diversos benefícios à saúde</p>
                 <p class="preco">R$ 29,90/unidade</p>
                 <a class="btn-primary-products">Ver oferta</a>
                 <a class="btn-primary-products">Adicionar ao carrinho</a>
@@ -169,12 +163,6 @@
             <div class="etiqueta etiqueta-natural">
                 <p>100% natural</p>
             </div>
-            <div class="etiqueta etiqueta-importado">
-                <p>Importado</p>
-            </div>
-            <div class="etiqueta etiqueta-off">
-                <p>20% off</p>
-            </div>
         </div>
 
         <div class="card">
@@ -182,7 +170,6 @@
             <div class="card-body">
                 <h3>Complexo Vitamínico</h3>
                 <p class="descricao">Suplemento para ajudar a suprir deficiências nutricionais</p>
-                <s>R$ 99,98/unidade</s>
                 <p class="preco">R$ 79,90/unidade</p>
                 <a class="btn-primary-products">Ver oferta</a>
                 <a class="btn-primary-products">Adicionar ao carrinho</a>
@@ -191,19 +178,12 @@
             <div class="etiqueta etiqueta-natural">
                 <p>100% natural</p>
             </div>
-            <div class="etiqueta etiqueta-importado">
-                <p>Importado</p>
-            </div>
-            <div class="etiqueta etiqueta-off">
-                <p>20% off</p>
-            </div>
         </div>
         <div class="card">
             <img src="assets/image/produtos/oleo_peixe.png" alt="">
             <div class="card-body">
                 <h3>Óleo de Peixe</h3>
-                <p class="descricao">Suplemento rico em ácidos graxos ômega-3</p>
-                <s>R$ 62,38/unidade</s>
+                <p class="descricao">Suplemento rico em ômega-3, benéfico para a saúde do coração, cérebro e articulações.</p>
                 <p class="preco">R$ 49,90/unidade</p>
                 <a class="btn-primary-products">Ver oferta</a>
                 <a class="btn-primary-products">Adicionar ao carrinho</a>
@@ -212,12 +192,6 @@
             <div class="etiqueta etiqueta-natural">
                 <p>100% natural</p>
             </div>
-            <div class="etiqueta etiqueta-importado">
-                <p>Importado</p>
-            </div>
-            <div class="etiqueta etiqueta-off">
-                <p>20% off</p>
-            </div>
         </div>
         <br>
     </div>
@@ -225,6 +199,8 @@
     <footer>
         <div class="footer-content">
             <h3>SUPLEMAX</h3>
+            <P>CNPJ: 88.138.062/0001-05</P>
+            <br>
             <p>O melhor suplemento está aqui</p>
         </div>
         <div class="footer-links">
@@ -234,7 +210,7 @@
             </i>
         </div>
     </footer>
-
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
