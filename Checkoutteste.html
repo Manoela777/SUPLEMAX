@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Checkout Progressivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="assets/css/style3.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+  <!-- PAGINA 1 -->
+
+  <section class="page active" id="page1">
+
+    <div class="container">
+
+      <div class="card">
+
+        <h1 class="title">
+          Seu Pedido
+        </h1>
+
+        <p class="subtitle">
+          Revise seus produtos antes de continuar.
+        </p>
+
+        <div class="product">
+
+          <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?q=80&w=600">
+
+          <div class="product-info">
+
+            <h3>Omega 3 Premium</h3>
+
+            <p>60 cápsulas</p>
+
+          </div>
+
+          <div class="price">
+            R$ 89,90
+          </div>
+
+        </div>
+
+        <div class="product">
+
+          <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=600">
+
+          <div class="product-info">
+
+            <h3>Magnésio Quelato</h3>
+
+            <p>90 cápsulas</p>
+
+          </div>
+
+          <div class="price">
+            R$ 59,90
+          </div>
+
+        </div>
+
+        <!-- RESUMO -->
+
+        <div class="summary">
+
+          <div class="summary-line">
+
+            <span>Subtotal</span>
+
+            <strong>R$ 149,80</strong>
+
+          </div>
+
+          <div class="summary-line">
+
+            <span>Frete</span>
+
+            <strong>Grátis</strong>
+
+          </div>
+
+          <div class="summary-total">
+
+            <span>Total</span>
+
+            <strong>R$ 149,80</strong>
+
+          </div>
+
+        </div>
+
+        <!-- UPSELL -->
+
+        <div class="upsell">
+
+          <div class="upsell-badge">
+            OFERTA ESPECIAL
+          </div>
+
+          <h2>
+            Adicione Coenzima Q10
+          </h2>
+
+          <p>
+            Mais energia e disposição.
+          </p>
+
+          <div class="upsell-price">
+            + R$ 39,90
+          </div>
+
+          <button
+            class="btn green-btn"
+            id="addUpsell"
+          >
+            Adicionar ao Pedido
+          </button>
+
+        </div>
+
+        <button
+          class="btn primary-btn"
+          onclick="nextPage(2)"
+        >
+          Continuar Compra
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PAGINA 2 -->
+
+  <section class="page" id="page2">
+
+    <div class="container">
+
+      <div class="card">
+
+        <h1 class="title">
+          Finalizar Compra
+        </h1>
+
+        <p class="subtitle">
+          🔒 Ambiente 100% seguro
+        </p>
+
+        <!-- LOGIN -->
+
+        <div class="login-box">
+
+          <h3>
+            Já possui cadastro?
+          </h3>
+
+          <div class="input-group">
+            <input type="email" placeholder="Seu e-mail">
+          </div>
+
+          <div class="input-group">
+            <input type="password" placeholder="Sua senha">
+          </div>
+
+          <button class="btn primary-btn">
+            Entrar
+          </button>
+
+          <div class="guest">
+            ou continue como visitante
+          </div>
+
+        </div>
+
+        <!-- FORM -->
+
+        <div class="input-group">
+
+          <label>Nome Completo</label>
+
+          <input type="text">
+
+        </div>
+
+        <div class="input-group">
+
+          <label>E-mail</label>
+
+          <input type="email">
+
+        </div>
+
+        <div class="input-group">
+
+          <label>CPF</label>
+
+          <input
+            type="text"
+            placeholder="000.000.000-00"
+          >
+
+        </div>
+
+        <!-- PAGAMENTO -->
+
+        <div class="payment-method">
+
+          <label class="method">
+
+            <input
+              type="radio"
+              name="payment"
+              checked
+            >
+
+            Pix com desconto
+
+          </label>
+
+          <label class="method">
+
+            <input
+              type="radio"
+              name="payment"
+            >
+
+            Cartão de Crédito
+
+          </label>
+
+          <label class="method">
+
+            <input
+              type="radio"
+              name="payment"
+            >
+
+            Boleto Bancário
+
+          </label>
+
+        </div>
+
+        <!-- CARTAO -->
+
+        <div class="input-group">
+
+          <label>Número do Cartão</label>
+
+          <input type="text">
+
+        </div>
+
+        <div class="small-inputs">
+
+          <div class="input-group">
+
+            <label>Validade</label>
+
+            <input
+              type="text"
+              placeholder="MM/AA"
+            >
+
+          </div>
+
+          <div class="input-group">
+
+            <label>CVV</label>
+
+            <input type="password">
+
+          </div>
+
+        </div>
+
+        <!-- PARCELAMENTO -->
+
+        <div class="input-group">
+
+          <label>Parcelamento</label>
+
+          <select>
+
+            <option>1x de R$ 149,80</option>
+            <option>2x de R$ 74,90</option>
+            <option>3x de R$ 49,93</option>
+            <option>12x de R$ 12,48</option>
+
+          </select>
+
+        </div>
+
+        <button
+          class="btn green-btn"
+          onclick="nextPage(3)"
+        >
+          Finalizar Pedido
+        </button>
+
+        <button
+          class="btn secondary-btn"
+          onclick="nextPage(1)"
+        >
+          Voltar
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PAGINA 3 -->
+
+  <section class="page" id="page3">
+
+    <div class="container">
+
+      <div class="card thank-you">
+
+        <div class="success-icon">
+          ✓
+        </div>
+
+        <h1>
+          Compra Realizada!
+        </h1>
+
+        <p>
+          Seu pagamento foi aprovado.
+        </p>
+
+        <div class="order-box">
+
+          <p>
+            <strong>Pedido:</strong>
+            #58421
+          </p>
+
+          <br>
+
+          <p>
+            <strong>Status:</strong>
+            Pagamento Aprovado
+          </p>
+
+        </div>
+
+        <div class="shipping">
+          🚚 Envio seguro em até 24h úteis
+        </div>
+
+        <button class="btn primary-btn">
+          Acompanhar Pedido
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</body>
