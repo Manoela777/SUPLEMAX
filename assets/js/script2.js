@@ -31,8 +31,7 @@ document
       this.innerHTML =
         '✓ Produto Adicionado';
 
-      this.style.background =
-        '#166534';
+      this.classList.add('upsell-added');
 
       alert(
         'Coenzima Q10 adicionada ao pedido!'

@@ -4,9 +4,5 @@ const calc = document.getElementById('calculadora');
 }
 
 function calcular(){
-    const peso = document.getElementById('peso').value
-    const altura = document.getElementById('altura').value
-
-    console.log(peso)
-    console.log(altura)
+    // Calculation will be added later
 }
