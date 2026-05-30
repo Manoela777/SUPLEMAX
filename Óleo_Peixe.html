@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óleo de Peixe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/image/imagem-removebg-preview.png" alt="">
+        </div>
+        <nav class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-regular fa-house"></i> Home</a></li>
+                <li><a href="Produtos.html"><i class="fa-solid fa-pills"></i> Produtos</a></li>
+                <li><a href="Perguntas.html"><i class="fa-regular fa-circle-question"></i> Perguntas Frequentes</a></li>
+            </ul>
+
+        </nav>
+        <div class="nav-auth">
+            <a href="PaginaCadastro.html" class="btn-primary">Entrar</a>
+            <a href="PaginaCadastro.html" class="btn-primary">Cadastre-se</a>
+            <a href="Checkoutteste.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i class="fa-solid fa-calculator" onclick="calculadora()"></i>
+        </div>
+        <div id="calculadora">
+            <form action="">
+                <label for="">Peso</label>
+                <input type="text" id="peso">
+                <label for="">Altura</label>
+                <input type="text" id="altura">
+                <br>
+                <button onclick="calcular()" type="">Calculadora</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="produto">
+        <div class="nome_produto">
+            <br>
+            <h1>Óleo de Peixe</h1>
+        </div>
+        <div class="produto-detalhes">
+            <div class="img_produto">
+                <img src="assets/image/produtos/oleo_peixe.png" alt="">
+            </div>
+
+            <div class="descricao_produto">
+                <p>O Óleo de Peixe é uma fonte rica de ômega 3, composto por ácidos graxos essenciais como EPA e DHA, importantes para a saúde do organismo.
+Auxilia na manutenção da saúde cardiovascular, contribuindo para níveis saudáveis de colesterol e triglicerídeos.
+Também favorece o funcionamento adequado do cérebro, ajudando na memória, concentração e desempenho cognitivo.
+Sua ação anti-inflamatória pode contribuir para a saúde das articulações e recuperação após atividades físicas.</p>
+                <h3>R$ 49,90</h3>
+                <div class="botao_add">
+                    <button class="btn secondary-btn" type="button">-</button>
+                    <p>2</p>
+                    <button class="btn secondary-btn" type="button">+</button>
+                </div>
+                <div class="botao_car">
+                    <a href="Checkoutteste.html" class="btn primary-btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <div class="footer-content">
+        <h3>SUPLEMAX</h3>
+        <P>CNPJ: 88.138.062/0001-05</P>
+        <br>
+        <p>O melhor suplemento está aqui</p>
+    </div>
+    <div class="footer-links">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </i>
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
